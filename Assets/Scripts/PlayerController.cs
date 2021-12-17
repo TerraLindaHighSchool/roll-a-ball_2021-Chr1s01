@@ -59,10 +59,10 @@ public class PlayerController : MonoBehaviour
 
 	void OnMove(InputValue value)
 	{
-		Vector2 v = value.Get<Vector2>();
+		Vector2 movementVector = value.Get<Vector2>();
 
-		movementX = v.x;
-		movementY = v.y;
+		movementX = movementVector.x;
+		movementY = movementVector.y;
 	}
 
 	void SetCountText()
